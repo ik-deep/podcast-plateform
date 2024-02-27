@@ -17,8 +17,8 @@ const Header = () => {
           Podcasts
         </Link>
         <Link
-          to="start-a-podcast"
-          className={path == "/start-a-podcast" ? "active" : ""}
+          to="/create-a-podcast"
+          className={path == "/create-a-podcast" ? "active" : ""}
         >
           Start A Podcasts
         </Link>
