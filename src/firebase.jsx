@@ -6,12 +6,13 @@ import {getAuth} from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBFkn0UvaCAbB9ndk-3ocjCeOZZqJH9uMQ",
-  authDomain: "podcast-plateform-57d6e.firebaseapp.com",
-  projectId: "podcast-plateform-57d6e",
-  storageBucket: "podcast-plateform-57d6e.appspot.com",
-  messagingSenderId: "310763416154",
-  appId: "1:310763416154:web:be01e62ffd7846ef524663",
+  apiKey: "AIzaSyBJ1ExAns4lCy2n1RKdoYmfR9yEWp92Zqs",
+  authDomain: "podcast-plateform-25cf7.firebaseapp.com",
+  projectId: "podcast-plateform-25cf7",
+  storageBucket: "podcast-plateform-25cf7.appspot.com",
+  messagingSenderId: "49422176510",
+  appId: "1:49422176510:web:8db99290dabc1f555e55af",
+  measurementId: "G-WP5N5WLZ7W"
 };
 
 // Initialize Firebase

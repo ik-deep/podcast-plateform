@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import { auth,db } from '../../firebase';
 import { doc, getDoc } from 'firebase/firestore';
 import { setUser } from '../../redux/slices/userSlice';
+import Loader from '../common/Loader';
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -27,7 +28,7 @@ const LoginForm = () => {
           password
         );
         const user = userCredential.user;
-        const userDoc = await getDoc(doc(db,"user",user.uid));
+        const userDoc = await getDoc(doc(db,"users",user.uid));
         const userData = userDoc.data();
         console.log("userData",userData);
 
@@ -73,7 +74,7 @@ const LoginForm = () => {
           required={true}
         />
        
-       <Button text={!loading?"Login":"Loading..."} onClick={handleLogin}  disabled={loading}/>
+       <Button text={!loading?"Login":'Loading...'} onClick={handleLogin}  disabled={loading}/>
     </>
   )
 }

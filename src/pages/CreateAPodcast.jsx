@@ -7,7 +7,7 @@ const CreateAPodcastPage = () => {
     <div>
         <Header/>
         <div className="input-wrapper">
-       <h1>Craete A Podcast</h1>
+       <h1>Create A Podcast</h1>
         <CreateAPodcastForm/>
        </div>
     </div>

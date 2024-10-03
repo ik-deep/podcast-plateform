@@ -1,0 +1,33 @@
+.custom-audio-player{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem 0rem ;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(124, 60, 225, 0.95);
+}
+.display-image-player{
+    height:50px;
+    width: 50px;
+    object-fit: cover;
+}
+.duration-range{
+    filter: hue-rotate(25deg);
+    width: 100%;
+}
+
+.duration-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 45%;
+    
+}
+.volume-range{
+    filter: hue-rotate(25deg);
+    /* width: 30%; */
+}

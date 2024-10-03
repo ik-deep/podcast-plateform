@@ -9,6 +9,7 @@ import FileInput from "../Input/FileInput";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { auth, db, storage } from "../../../firebase";
 import { addDoc, collection, doc, setDoc } from "firebase/firestore";
+import Loader from "../Loader";
 
 function CreatePodcastForm() {
   const [title, setTitle] = useState("");
@@ -108,7 +109,7 @@ function CreatePodcastForm() {
       />
 
       <Button
-        text={loading ? "Loading..." : "Create Podcast"}
+        text={loading ? 'Loading...' : "Create Podcast"}
         disabled={loading}
         onClick={handleSubmit}
       />

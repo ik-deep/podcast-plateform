@@ -22,6 +22,17 @@
     color: var(--white);
     transition: all 0.3s ;
 }
+.links p{
+    padding: 0;
+    margin: 0;
+    color: var(--grey) ;
+}
+
+.links p:hover{
+    color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+}
 
 .gradient{
     position: absolute;

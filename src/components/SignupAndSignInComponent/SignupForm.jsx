@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import  {setUser}  from "../../redux/slices/userSlice";
 import { toast } from "react-toastify";
+import Loader from "../common/Loader";
 
 
 const SignupForm = () => {
@@ -33,7 +34,7 @@ const SignupForm = () => {
         console.log("user",user);
 
         // saving user details
-        await setDoc(doc(db,"user",user.uid),{
+        await setDoc(doc(db,"users",user.uid),{
             name:fullName,
             email:user.email,
             uid:user.uid,
@@ -52,7 +53,7 @@ const SignupForm = () => {
         navigate("/profile");
 
       } catch (e) {
-        toast.error(e);
+        toast.error(e.message);
         setLoading(false);
         console.log("error", e);
       }
@@ -98,7 +99,7 @@ const SignupForm = () => {
         type="password"
         required={true}
       />
-      <Button text={!loading?"Signup":"Loading..."} onClick={handleSignup}  disabled={loading}/>
+      <Button text={!loading?"Signup":'Loading...'} onClick={handleSignup}  disabled={loading}/>
     </>
   );
 };

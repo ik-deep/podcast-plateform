@@ -11,7 +11,7 @@ const userSlice = createSlice({
       setUser : (state,action) =>{
         state.user = action.payload
       },
-      clearUser:(state) => {useAppDispatch
+      clearUser:(state) => {
         state.user = null
       },
     },
